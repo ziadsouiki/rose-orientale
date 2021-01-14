@@ -1,0 +1,21 @@
+/* todo : find how to use @layer utilities with next js */
+
+@media (max-width: 768px) {
+    .landing {
+        background-color: #fff8f8;
+        background-image: url(/landing/waves.svg), url(/landing/stars.svg);
+        background-position: bottom, left 0%;
+        background-repeat: no-repeat, repeat-x;
+        background-size: contain, 100%;
+    }
+}
+@media (min-width: 768px) {
+    .landing {
+        background-color: #fff8f8;
+        background-image: url(/landing/waves.svg), url(/landing/landing.png), url(/landing/stars.svg);
+        background-position: bottom, right top, left 0%;
+        background-repeat: no-repeat, no-repeat, repeat-x;
+        background-size: contain, 40% 90%, 50% 100%;
+    }
+}
+

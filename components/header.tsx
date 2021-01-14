@@ -8,7 +8,7 @@ export default function Header(props: Props) {
     return (
         <nav className="p-2 mt-0 w-full z-10 pin-t">
             <div className="container mx-auto flex flex-wrap items-center">
-                <div className="flex w-full md:w-1/2 justify-center md:justify-start text-white font-extrabold">
+                <div className="flex w-full md:w-1/2 justify-center md:justify-start text-white">
                     <a href="#">
                         <Image
                             src="/rose-black.png"

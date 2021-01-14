@@ -30,7 +30,7 @@ export default function ClientSatisfaction({reviews}: Props) {
           <div id="left-button-satisfaction"
                onClick={leftClick}
                className="h-8 w-8">
-            <svg className={selectedIndex == 0 ? 'text-gray-200' : 'cursor-pointer'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            <svg className={selectedIndex == 0 ? 'text-gray-200' : 'cursor-pointer animate-bounce'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M7 16l-4-4m0 0l4-4m-4 4h18"/>
             </svg>
@@ -40,7 +40,7 @@ export default function ClientSatisfaction({reviews}: Props) {
           />
           <div onClick={rightClick}
                id='right-button-satisfaction' className="h-8 w-8">
-            <svg className={selectedIndex == reviews.length-1 ? 'text-gray-200' : 'cursor-pointer'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+            <svg className={selectedIndex == reviews.length-1 ? 'text-gray-200' : 'cursor-pointer animate-bounce'} xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
                  stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3"/>
             </svg>
