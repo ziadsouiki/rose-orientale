@@ -14,7 +14,7 @@ export default function Home({reviews}: Props) {
             <Layout
                 title="Rose Orientale patisserie orientale"
                 active="home"
-                description="Learn how to build an AMP First with Next.js."
+                description="Traiteur patisserie orientale, mariage, evenements, entreprise. Livraison en Ile de France."
             >
                 <div className={styles.landing + ' w-full h-72'}>
                     <section id="title" className="w-full md:w-8/12 h-60 flex flex-col justify-center items-center text-center">
