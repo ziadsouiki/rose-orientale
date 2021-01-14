@@ -1,7 +1,8 @@
-import Layout from "../components/Layout";
-import ClientSatisfaction from "../components/client-satisfaction";
-import {Review} from "../types/review.type";
+import Layout from "../components/Layout"
+import ClientSatisfaction from "../components/client-satisfaction"
+import {Review} from "../types/review.type"
 import styles from './index.module.css'
+import {getReviews} from './api/reviews'
 
 interface Props {
     reviews: Review[];
@@ -38,8 +39,7 @@ export default function Home({reviews}: Props) {
 }
 
 export async function getStaticProps({preview = null}) {
-    const request = await fetch('http://localhost:3000/api/reviews');
-    const reviews = await request.json();
+    const reviews = await getReviews();
     return {
         props: {reviews},
     }

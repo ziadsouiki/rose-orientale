@@ -14,8 +14,12 @@ const fakeData = [
   }
 ]
 
-export default async function getReviews(req, res) {
+export function getReviews(){
+  return fakeData;
+}
+
+export default (req, res) => {
   res.statusCode = 200
   res.setHeader('Content-Type', 'application/json')
-  res.end(JSON.stringify(fakeData));
+  res.end(JSON.stringify(getReviews()));
 }
